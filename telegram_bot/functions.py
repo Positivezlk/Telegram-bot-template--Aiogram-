@@ -24,3 +24,4 @@ async def adding(message: Message, state: FSMContext):
         await message.answer('Неправильный ввод! Можно вводить только числа, и только через пробел.')
         await state.set_state(Form.function1)
         await adding_nums_ask(message, state)
+        
